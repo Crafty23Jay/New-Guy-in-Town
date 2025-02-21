@@ -1,0 +1,169 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(242, 239, 187);
+    
+}
+
+.top-nav{
+    position: sticky;
+    background-color: green;
+    width: 100vw;
+    height: 4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.top-nav>h3{
+    font-size: 1.5rem;
+}
+
+.top-nav>img{
+    width: 10rem;
+    margin: 0 !important;
+}
+
+.input-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/international-backgr.jpg);
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.579);
+    background-size: cover;
+    background-position: 50%,15%;
+    padding: 2rem;
+}
+
+button{
+    background-color: rgb(150, 45, 255);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 4.5rem;
+    height: 2.2rem;
+}
+
+.about-div{
+    background-color: rgb(190, 255, 190) !important; 
+    width: 100vw;
+    height: fit-content;
+}
+
+button:hover{
+    background-color: rgb(180, 149, 211);
+}
+input[type='text']:focus{
+    border-style: none;
+    border-radius: 0.7;
+    outline: 2px solid rebeccapurple;
+}
+
+input[type='text']{
+    width: 19rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    text-decoration: rebeccapurple;
+    text-transform: uppercase;
+}
+
+input[type='text']::placeholder{
+    color: rebeccapurple;
+    font-size: 0.7rem;
+    padding-left: 0.5rem;
+}
+
+h5{
+    background-color: green;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 0.15rem;
+    padding-right: 5rem;
+    padding-left: 3rem;
+    margin-top: 3rem;
+    border-radius: 0.2rem;
+}
+
+img{
+    width: 50vw;
+    margin-bottom: 4rem;
+
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#country-name{
+    color: rebeccapurple;
+    font-size: 4rem;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -2rem;
+}
+
+#official{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.more-about{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    color: blue;
+}
+
+.map-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(222, 222, 222);
+    width: 100vw;
+    height: 29rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+
+}
+
+.map-div>img{
+    position: relative;
+    margin: 0 !important;
+}
+
+.map-div>h3{
+    position: absolute;
+    color: green;
+    font-size: 2.5rem;
+    margin-top: -1rem;
+}
+
+.map-div>a{
+    position: absolute;
+    padding: 0.5rem;
+    color: white;
+    background-color: green;
+    margin-top: 5rem;
+}
+
+.map-div>a:hover{
+    cursor: pointer;
+    background-color: rgb(52, 211, 52);
+}
