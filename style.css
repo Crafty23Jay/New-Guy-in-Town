@@ -1,7 +1,9 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: rgb(242, 239, 187);
+    padding: 0;
+    background-color: rgb(255, 253, 220);
+    position: relative;
     
 }
 
@@ -14,10 +16,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    top: 0;
 }
 
 .top-nav>h3{
-    font-size: 1.5rem;
+    font-size: 1.15rem;
+    width: 25%;
+}
+.top-nav>p{
+    font-size: 0.8rem;
+    width: 35%;
 }
 
 .top-nav>img{
@@ -51,24 +59,24 @@ button{
 }
 
 .about-div{
-    background-color: rgb(190, 255, 190) !important; 
+    background-color: rgb(219, 255, 219) !important; 
     width: 100vw;
     height: fit-content;
 }
 
 button:hover{
-    background-color: rgb(180, 149, 211);
+    background-color: rgb(156, 97, 216);
 }
 input[type='text']:focus{
     border-style: none;
-    border-radius: 0.7;
+    border-radius: 0.2rem;
     outline: 2px solid rebeccapurple;
 }
 
 input[type='text']{
     width: 19rem;
     padding: 0.5rem;
-    border-radius: 0.3rem;
+    border-radius: 0.2rem;
     text-decoration: rebeccapurple;
     text-transform: uppercase;
 }
@@ -85,8 +93,8 @@ h5{
     font-size: 1.3rem;
     font-weight: 300;
     padding: 0.15rem;
-    padding-right: 5rem;
-    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     margin-top: 3rem;
     border-radius: 0.2rem;
 }
@@ -94,7 +102,6 @@ h5{
 img{
     width: 50vw;
     margin-bottom: 4rem;
-
 }
 
 main{
@@ -111,7 +118,7 @@ main>div{
 }
 
 #country-name{
-    color: rebeccapurple;
+    color: rgb(12, 58, 0);
     font-size: 4rem;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -121,6 +128,12 @@ main>div{
 #official{
     font-size: 2rem;
     margin: 0;
+    width: max-content;
+    margin-top: 2rem;
+    
+}
+#continent{
+    color: rgb(199, 148, 18);
 }
 
 .more-about{
@@ -139,7 +152,6 @@ main>div{
     width: 100vw;
     height: 29rem;
     margin-top: 4rem;
-    margin-bottom: 3rem;
 
 }
 
@@ -162,8 +174,189 @@ main>div{
     background-color: green;
     margin-top: 5rem;
 }
+#map{
+    text-decoration: none;
+    font-size: 0.85rem;
+    border-radius: 0.2rem;
+}
+map:hover{
+    text-decoration: underline;
+}
 
 .map-div>a:hover{
     cursor: pointer;
-    background-color: rgb(52, 211, 52);
+    background-color: rgb(24, 184, 24);
+    text-decoration: underline;
+}
+
+
+
+@media (max-width:1000px) {
+    .top-nav>img{
+        width: 7rem;
+    }
+    .top-nav>h3{
+        font-size: 0.68rem;
+        width: 20%;
+        text-align: center;
+        line-height: 0.8rem;
+    }
+    .top-nav>p{
+        font-size: 0.7rem;
+        width: 35%;
+    }
+
+    #country-input{
+        width: 40vw;
+    }
+    .about-div>h5{
+        padding: 0 0.8rem;
+        font-size: 1.1rem;
+    }
+
+    #country-name{
+        font-size: 2.8rem;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    #official{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    #continent{
+        color: rgb(199, 148, 18);
+    }
+    .flag-div>h5{
+        padding: 0 0.8rem;
+        font-size: 1.1rem;
+    }
+    .c-o-arm>h5{
+        padding: 0 0.8rem;
+        font-size: 1.1rem;
+    }
+
+    .map-div>img{
+        width: 75vw;
+    }
+    .map-div>h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #map{
+        text-decoration: none;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width:580px) {
+    .top-nav>img{
+        width: 7rem;
+    }
+    .top-nav>h3{
+        font-size: 0.56rem;
+        width: 20%;
+        text-align: center;
+        line-height: 0.8rem;
+    }
+    .top-nav>p{
+        font-size: 0.7rem;
+        width: 35%;
+    }
+
+    #country-input{
+        width: 40vw;
+    }
+    .about-div>h5{
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    #country-name{
+        font-size: 2.8rem;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    #official{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    #continent{
+        color: rgb(199, 148, 18);
+    }
+    .flag-div>h5{
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+    }
+    .c-o-arm>h5{
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .map-div>img{
+        width: 75vw;
+    }
+    .map-div>h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #map{
+        text-decoration: none;
+        font-size: 0.85rem;
+    }
+}
+@media (max-width:418px) {
+    .top-nav>img{
+        width: 7rem;
+    }
+    .top-nav>h3{
+        font-size: 0.5rem;
+        width: 20%;
+        text-align: center;
+        line-height: 0.8rem;
+    }
+    .top-nav>p{
+        font-size: 0.6rem;
+        width: 35%;
+    }
+
+    #country-input{
+        width: 40vw;
+    }
+    .about-div>h5{
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    #country-name{
+        font-size: 2.8rem;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    #official{
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    #continent{
+        color: rgb(199, 148, 18);
+    }
+    .flag-div>h5{
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+    }
+    .c-o-arm>h5{
+        padding: 0 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .map-div>img{
+        width: 75vw;
+    }
+    .map-div>h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #map{
+        text-decoration: none;
+        font-size: 0.85rem;
+    }
 }

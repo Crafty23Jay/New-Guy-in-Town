@@ -30,6 +30,10 @@ const continentEl = document.querySelector('#continent')
 const regionEl = document.querySelector('#region')
 const currencyEl = document.querySelector('#currency')
 
+// function inputResult() =>{
+//     inputCountryEl('')
+// }
+
 
 async function getOneCountry(country){
     const result = await fetch(`https://restcountries.com/v3.1/name/${country}`)
@@ -49,6 +53,8 @@ async function getOneCountry(country){
 btnEl.addEventListener('click', function(){
     console.log(inputCountryEl.value)
     getOneCountry(inputCountryEl.value)
+    inputCountryEl("")
+    
 })
 
 // getOneCountry('nigeria')
